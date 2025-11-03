@@ -16,8 +16,6 @@ Command	Win ( # )	#	用于系统启动器和桌面切换
 Option	Alt ( ! )	!	在编辑操作中模拟 Option
 Control	Ctrl ( ^ )	^	用于桌面和光标移动
 
-导出到 Google 表格
-
 🚀 主要功能一览
 1. 系统与窗口管理 (全局)
 macOS 风格快捷键	实际按键组合	实现功能	Windows 原生发送
@@ -28,8 +26,6 @@ Command + Ctrl + Q	Alt + Ctrl + Q ($!^q)	锁定屏幕并关闭显示器	-
 Command + Left/Right	Ctrl + Left/Right ($^Left/$^Right)	切换虚拟桌面	Ctrl + Win + Left/Right
 启动器	Win + E/N/T ($#e/$`#n`/$#t)	启动 Explorer / Notepad / Terminal	-
 输入法	Caps Lock (*CapsLock)	切换中英文输入法	Ctrl + Space
-
-导出到 Google 表格
 
 2. 通用编辑操作 (#IfWinNotActive ahk_group posix)
 适用于浏览器、Word、Excel 等大多数非终端应用。
@@ -43,8 +39,6 @@ Option + ←/→	Alt + Left/Right ($!Left/$!Right)	移动到行首/行尾	Home/E
 Ctrl + A/E	Ctrl + A/E ($^a/$^e)	移动到行首/行尾	Home/End
 Win + Backspace	Win + Backspace ($#Backspace)	删除前一个单词	Ctrl + Backspace
 
-导出到 Google 表格
-
 3. 终端专用操作 (#IfWinActive ahk_group terminals)
 针对 powershell.exe, WindowsTerminal.exe, Cmd.exe 等程序进行了优化。
 
@@ -53,8 +47,6 @@ Command + C/V	Alt + C/V ($!c/$!v)	终端复制/粘贴	Ctrl + Shift + C/V
 Command + W/T	Alt + W/T ($!w/$!t)	关闭 Tab/新建 Tab	Ctrl + Shift + W/N/T
 Command + { / }	Alt + Shift + [ / ] ($!+{/$!+})	切换上/下一个 Tab	Ctrl + Shift + Tab / Ctrl + Tab
 
-导出到 Google 表格
-
 4. VS Code 专用操作 (#IfWinActive ahk_group vscode)
 针对 Code.exe 和 VSCodium.exe 进行了优化。
 
@@ -62,8 +54,6 @@ macOS 风格快捷键	实际按键组合	实现功能	Windows 原生发送
 Command + P	Alt + P ($!p)	文件搜索	Ctrl + P
 Command + Shift + P	Alt + Shift + P ($!+p)	命令面板	Ctrl + Shift + P
 Command + ,	Alt + , ($!,)	打开设置	Ctrl + ,
-
-导出到 Google 表格
 
 🚨 遇到问题 (Emergency)
 如果快捷键卡住或发生冲突，可以按下应急热键：
